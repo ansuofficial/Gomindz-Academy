@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap'); 
+@import url(../CSS/fonts.css);
+
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    /* Team font-family */
+    --Abel:"Abel",cursive;
+    --Livvic:"Livvic",cursive;
+    --Lexend:"Lexend",cursive;
+    --Josefin:"Josefin",sans-serif;
+    --Anton:"Anton",cursive;
+    --Roboto:"Roboto",cursive;
+}
+/* ........................ Navigation Section .................... */
+nav{
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background:linear-gradient(151deg, rgba(174, 156, 223, 1) 4%, rgba(15, 144, 223, 1) 52%, rgba(6, 176, 213, 1) 83%);
+  } 
+.nav-link{
+    color: #fff !important;
+    font-size: 16px;
+    font-weight: bold;
+    font-family:var(--Josefin) ;
+}
+.gomindz-logo{
+  width: 60px;
+  height: 60px;
+}
+.nav-link:hover{
+    transform: scale(.9);
+    cursor: pointer;
+    border-bottom: 2PX solid blueviolet
+}
+/* ............X........... Navigation Section ...........X........ */
+
+/* .................... Home Section ......................... */
+main .contact{
+    min-height: 100vh;
+    width: 100%;
+    background: url(../IMAGES/Instructors/image.png);
+    background-size: cover;
+    margin-top: 70px;
+}
+
+/* .................... Heading Section ........................... */
+/* .................... Heading Section ........................... */
+main .contact .contact-heading{
+    display: block;
+    text-align: center;
+    margin: 0 15%;
+    padding-top: .2px;
+}
+main .contact .contact-heading h2{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 900;
+    margin-top: 2%;
+}
+main .contact .contact-heading p{
+    /* font-size: 18px; */
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+}
+/* .................... Container Section ..................... */
+main .contact .contain{
+    width: 80%;
+    background:linear-gradient(151deg, rgba(174, 156, 223, 1) 4%,
+    rgba(15, 144, 223, 1) 52%, rgba(6, 176, 213, 1) 83%);
+    opacity: .7;
+    padding: 30px 60px 40px 30px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow:5px 10px 18px   rgba(181, 105, 211, 0.418);
+}
+main .contact .contain .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main .contact .contain .left-side{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+main .contact .contain .left-side::before{
+    content: '';
+    position: absolute;
+    height: 78%;
+    width: 2px;
+    right: -20px;
+    top: 15%;
+    transform: translate(-50%);
+    background: #afafb6;
+}
+main .contact .contain .left-side .details{
+    margin: 14px;
+    text-align: center;
+}
+main .contact .contain .left-side .details i{
+    font-size: 15px;
+    color: #3e2093;
+    margin-bottom: 2px;
+    border: 2px solid #fff;
+    padding: 3%;
+    border-radius: 50%;
+    background-color: #fff;
+}
+main .contact .contain .left-side .details .topic{
+    font-size: 21px;
+    font-weight: 900;
+    color: #fff;
+}
+main .contact .contain .left-side .details .text-one,
+main .contact .contain .left-side .details .text-two{
+    color: rgb(95, 83, 83);
+    font-weight: 580;
+}
+
+main .contact .contain .right-side{
+    width: 75%;
+    margin-left: 90px;
+}
+main .contact .contain .right-side .topic-text{
+    font-size: 25px;
+    font-weight: 800;
+    color: #3e2093;
+} 
+main .contact .contain .right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+main .contact .contain .right-side .input-box input,
+main .contact .contain .right-side .input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #f0f1f8;
+    border-radius: 6px;
+    padding: 5px 15px;
+    resize: none;
+}
+main .contact .contain .right-side .message-box{
+    min-height: 100px;
+    margin-top: 6px;
+}
+main .contact .contain .right-side .button{
+    display: inline-block;
+}
+main .contact .contain .right-side .button input[type="submit"]{
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 8px;
+    background: #3e2093;
+    margin-top: 55px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+main .contact .contain .right-side .button input[type="submit"]:hover{
+    background: #5029bc;
+}
+/* ..................... Media Query ............................ */
+@media only screen and (max-width: 874px){
+    main .contact .contain{
+        width: 90%;
+        padding: 30px 30px 40px 30px;
+    }
+}
+@media only screen and (max-width:744px){
+    main .contact{
+        min-height: 100vh;
+        width: 100%;
+        background: url(../IMAGES/Instructors/image.png);
+        background-size: cover;
+    }
+    main .contact .contain{
+        margin: 40px auto 0;
+        height: 100%;
+    }
+    main .contact .contain .content{
+        flex-direction: column-reverse;
+    }
+    main .contact .contain .content .left-side{
+        width: 100%;
+        flex-direction: row;
+        margin-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    main .contact .contain .content .left-side::before{
+        display: none;
+    }
+    main .contact .contain .content .right-side{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+/* ..........X.......... Media Query ...............X............ */
+/* .........X.......... Home Section ...........X............. */

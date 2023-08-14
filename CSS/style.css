@@ -1,0 +1,1532 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap'); 
+@import url(../CSS/fonts.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  min-height: 100vh;
+  font-weight: normal;
+  overflow-x: hidden;
+  scroll-behavior: smooth !important;
+  overflow-y: scroll !important;
+}
+
+/* ................... Css Variables .................? */
+:root{
+    /* Team font-family */
+    --Abel:"Abel",cursive;
+    --Livvic:"Livvic",cursive;
+    --Lexend:"Lexend",cursive;
+    --Josefin:"Josefin",sans-serif;
+    --Anton:"Anton",cursive;
+    --Roboto:"Roboto",cursive;
+}
+/* .........X.......... Css Variables ..........X.......? */
+/* ...............Global classes................ */
+.header2{
+    font-family: var(--Anton);
+    font-weight: 100px;
+    text-align: center;
+}
+
+.header3{
+   position: absolute;
+   top: 12%;
+   font-family: var(--Anton);
+   font-weight: 100px;
+   text-align: center;
+   color: #fff ;
+   opacity: 100;
+}
+
+/* ......X.........Global classes........X........ */
+
+/* ...............Navigation Section............. */
+nav{
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background:linear-gradient(151deg, rgba(174, 156, 223, 1) 4%, rgba(15, 144, 223, 1) 52%, rgba(6, 176, 213, 1) 83%);
+  }
+.nav-link{
+    color: #fff !important;
+    font-size: 16px;
+    font-weight: bold;
+    font-family:var(--Josefin) ;
+}
+.gomindz-logo{
+  width: 60px;
+  height: 60px;
+}
+
+.nav-link:hover{
+    transform: scale(.9);
+    cursor: pointer;
+    border-bottom: 2PX solid blueviolet;
+    /* border-radius: 0px; */
+}
+/* .......X........Navigation Section........X..... */
+
+/* ............... Main Section............. */
+.main-container{
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+} 
+   /* ............Home Section ................ */
+main #Home{ 
+    background:url(../IMAGES/Instructors/GomindzAcademy-landingPage.png) ;
+    background-size: cover;
+    background-position: fixed;
+    min-height: 59vmax;
+}
+main #Home h2{
+    text-align: left;
+    margin-right: 50px;
+    margin-top: 50px;
+    padding-top: 60px;
+    padding-right: 40%;
+    padding-left: 3%;
+    margin-bottom: 2vmax;
+    font-size: 5vmax;
+    font-weight: 800;
+    font-style: italic;
+    color: #2a2a2a;
+    line-height: inherit;
+    background: #FA9D4D;
+    background: -webkit-linear-gradient(to right, #fff 0%, #fff 100%);
+    background: -moz-linear-gradient(to right, #fff 0%, #fff 100%);
+    background: linear-gradient(to right, #fff 0%, #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  main #Home p{
+    padding-left: 3%;
+    color: #ffff;
+    font-size: 1.3vmax;
+  }
+  main #Home button{
+    border: none;
+    padding: 10px 12px;
+    margin:  0 9%;
+    margin-left: 3%;
+    border-radius: 20px;
+    background: #0f015c;
+    color: white;
+    font-family: var(--Lexend);
+    font-size: 15px;
+    font-weight: bold;
+    transition: .4s;
+  }
+  main #Home button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+   /* ........X....Home Section ........X........ */
+
+      /* ............About Section ................ */
+
+ main #about{
+  padding: 0% 8% 4%;
+ }
+ main #about h2{
+  padding-bottom: 3%;
+ }
+
+ main #about .about-image img{
+  height: 80vh;
+  float: right;
+  padding-left: 3%;
+  padding-top: 5%;
+ }
+
+ main #about .about-text .about-para h3{
+  font-size: 1.4rem;
+  color: #3296cf ;
+  font-family: var(--Lexend);
+ }
+
+ main #about .about-text .about-para p{
+  font-size: 16px;
+ }
+
+    /* ........X....About Section .......X......... */ 
+
+   /* ............Courses Section ................ */
+ main #courses{
+    background: url(../IMAGES/Abract01.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+    min-height: 20vmax ;
+    margin-top: 0;
+    margin-bottom: 8%;
+    padding-top: 0;
+    background-size: 65%;
+    
+ }
+
+
+ main .blog .blog-post{
+    padding-top: .5rem;
+ }
+
+ main .blog-post .blog-content{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 95%;
+    margin: 1.5rem 0rem;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2); }
+ 
+ main .blog-content .blog-title {
+    padding-top: 2rem;
+    padding: 2rem 1rem 1.5rem;
+ }
+
+ main .blog-content .blog-title h3{
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+    padding-top: .5rem;
+ }
+
+
+ main .blog-content img{
+    height: 15rem;
+ }
+
+
+ .number{
+    color: #0f1316;
+    float: right;
+ }
+
+ 
+ @media (max-width: 300px) {
+  .button-link button {
+    font-size: 12px;
+    padding: 5px 10px; 
+  }
+
+}
+
+@media (max-width: 232px) {
+  .button-link button {
+    font-size: 10px;
+    padding: 3px 5px; 
+  }
+
+}
+
+
+ .iimage {
+  position: relative;
+  max-width: 100%;
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.iimage img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .blog-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.iimage:hover .ioverlay{
+  display: block;
+}
+
+
+.ioverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(32, 32, 32, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.ioverlay button {
+  color: #fff;
+  background-color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.para-pricing {
+  position: relative;
+  top: -20px;
+}
+
+ .button-link {
+  margin-right: 5%;
+  margin-top: -30px;
+ }
+
+ .para-duration {
+  color: hsl(207, 4%, 56%);;
+ }
+
+ .para-duration span {
+  color: #0f1316;
+ }
+ 
+ .para-pricing {
+  color: hsl(207, 4%, 56%);
+ }
+
+ .canceled-price {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 10px;
+}
+
+.original-price {
+  font-size: 21px;
+  color: #0f1316;;
+}
+
+
+ section .container .owl-nav{
+    position: absolute;
+    top: 100%;
+    margin: 0 auto 25%;
+    width: 100%;
+ }
+
+ .owl-nav .owl-prev .owl-nav-prev,
+ .owl-nav .owl-next .owl-nav-next{
+    color: #0f1316;
+    background: transparent;
+    font-size: 1.5rem;
+ }
+
+ .owl-theme .owl-nav [class*='owl-']:hover{
+    background: transparent;
+    color: #0f1316;
+ }
+ 
+   /* ........X....Courses Section .......X......... */
+  
+    /* ........X.... Service Section .......X......... */
+ main #service{
+  width: 100%;
+  max-height: 65vmax;
+  box-shadow: 0 -5px  10px rgba(0, 0, 0, 0.2);
+  /* background-image: url(../IMAGES/service-left-bg.png); */
+  background-repeat: no-repeat;
+  padding: 2% 3% 0;
+ } 
+
+ .team-container,
+ .wrapper{
+ margin: 0 5%;
+ } 
+
+ main #service .card img{
+ height: 125px;
+ width: 125px;
+ border-radius: 50%;
+ margin-right: auto;
+ margin-left: auto;
+ display: block;
+ margin-bottom: 10px;
+ }
+
+ main #service .wrapper .single-testi .card{
+ text-align: center;
+ margin-top: 10%;
+ margin: 10% 0 5%;
+ padding: 1.5rem 1rem;
+ border-bottom-right-radius: 140px;
+ border-top-left-radius: 140px;
+ }
+
+ main #service .wrapper .single-testi .card-1{
+ border: 2px solid rgb(98, 135, 165);
+ } 
+
+ .owl-nav{
+ position: absolute;
+ top: 100%;
+ margin: 0 auto 25%;
+ width: 100%;
+ }
+
+ .owl-nav .owl-prev,
+ .owl-nav .owl-next{
+  color: #0f1316;
+ background: transparent;
+ font-size: 1.5rem;
+ }
+/* ........X.... service Section .......X......... */ 
+
+/* ............ testimonial Section ................ */
+ main #testimonial{
+   padding: 2% 1% 3%;
+ }
+
+ main #testimonial .swiper-js{
+   position: relative;
+   width: 100%;
+   min-height: 90vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   /* background:linear-gradient(151deg, rgba(174, 156, 223, 1) 4%, rgba(15, 144, 223, 1) 52%, rgba(6, 176, 213, 1) 83%); */
+   opacity: 0.8;
+ }
+
+ main #testimonial .swiper-cs{
+   position: relative;
+ }
+
+ .swiper {
+   width: 100%;
+   padding-top: 100px;
+   padding-bottom: 70px;
+ }
+
+ .swiper-slide {
+   background-position: center;
+   background-size: cover;
+   width: 290px;
+   background: #fff;
+   box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+   filter: blur(4px);
+ }
+
+ .swiper-slide-active{
+   filter: blur(0px);
+   box-shadow: 0 15px 25px rgba(36, 3, 36, 0.938);
+   border-radius: 20px;
+ }
+
+ .testimonialBox{
+   position: relative;
+   width: 100%;
+   padding: 40px 20px 40px ;
+   padding-top: 50px;
+   color: black;
+ }
+ .testimonialBox .quote{
+   position: absolute;
+   top: 20px;
+   right: 30px;
+   opacity: 0.3;
+ }
+ .testimonialBox p{
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0;
+  word-spacing: 0;
+  
+ }
+ .testimonialBox .details{
+   display: flex;
+   align-items: center;
+   margin-top: 20px;
+ }
+ .testimonialBox .details .imgBx{
+   position: relative;
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   overflow: hidden;
+   margin-right: 10px;
+ }
+ .testimonialBox .details .imgBx img{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+ .testimonialBox .details h4{
+   font-size: 16px;
+   font-weight: bold;
+   letter-spacing: 1px;
+   color: #0b3269;
+   line-height: 1.1em;
+ }
+ .testimonialBox .details h4 span{
+   font-size: 14px;
+   color: #666;
+ }
+
+ .swiper-3d .swiper-slide-shadow-left,
+ .swiper-3d .swiper-slide-shadow-right{
+   background: none;
+ }  
+    
+ /* ........... Shape Divider ................ */
+ .custom-shape-divider-top-1670545636 {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   overflow: hidden;
+   line-height: 0;
+}
+
+.custom-shape-divider-top-1670545636 svg {
+   position: relative;
+   display: block;
+   width: calc(100% + 1.3px);
+   height: 33px;
+   transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1670545636 .shape-fill {
+   fill: #fff;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+   .custom-shape-divider-top-1670545636 svg {
+       width: calc(130% + 1.3px);
+       height: 83px;
+   }
+}
+
+.custom-shape-divider-bottom-1670545403 {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   overflow: hidden;
+   line-height: 0;
+   transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1670545403 svg {
+   position: relative;
+   display: block;
+   width: calc(107% + 1.3px);
+   height: 42px;
+   transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1670545403 .shape-fill {
+   fill: #fff;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+   .custom-shape-divider-bottom-1670545403 svg {
+       width: calc(130% + 1.3px);
+       height: 83px;
+      }
+}
+
+ /* ......X..... Shape Divider ........X........ */
+
+ /* ........X.... testimonial Section .......X......... */
+
+ /* .............. Team Section ................ */
+ main #team{
+  margin: 3% 0 0;
+  width: 100%;
+  min-height: 13vmax;
+  background-image: url(../IMAGES/service-left-bg.png);
+  background-repeat: no-repeat;
+ }
+ main #team .team-item img{
+  width: 90%;
+  height: 10%;
+ }
+ .team{
+  margin: 3% 0 !important;
+  padding: 0 !important;
+ }
+ .team-item{
+  position: relative;
+  display: inline-block;
+  margin: 5% 0 0;
+  padding: 0 0;
+ }
+ .team-item .item-data{
+  position: absolute;
+  bottom: -60px;
+  width: 90%;
+  height: auto;
+  padding: 15px 0px;
+  text-align: center;
+  color: #fff;
+  transition: .3s;
+  background-color: #3498db;
+ }
+ .team-item:hover .item-data{
+  bottom: 0px;
+  transition: .3s;
+ }
+ .team-item .item-data .name-pos h5{
+  font-weight: bold;
+  font-size: 16px;
+ }
+ .team-item .item-data .name-pos p{
+  font-weight: 400;
+  font-size: 12px  ;
+ }
+ .team-item .item-data .social .fa-brands{
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #fff;
+  color: #3498db;
+ }
+ .team-item .item-data .social .fa-brands:hover{
+  background-color: #222;
+  color: #fff;
+ }
+ /* ......X........ Team Section ........X........ */
+
+   /* .................. footer section .......................... */
+
+   .footer-container {
+    background: linear-gradient(151deg, rgba(174, 156, 223, 1) 4%, rgba(15, 144, 223, 1) 52%, rgba(6, 176, 213, 1) 83%);
+    padding: 2rem;
+  }
+  
+  /* Footer content wrapper */
+  .footer-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  /* Summary container */
+  .sumarry-container,
+  .useful-container,
+  .contact-container {
+    flex: 1;
+    max-width: 300px;
+    padding: 1rem;
+  }
+  
+  /* Useful links styling */
+  .useful-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .useful-container ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Subtitle styling */
+  .subtitle {
+    font-size: 12px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Social icons styling */
+  .m-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .m-icons i {
+    font-size: 19px;
+    margin: 0 10px;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .footer-container1 {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .sumarry-container,
+    .useful-container,
+    .contact-container {
+      max-width: 100%;
+    }
+    
+    .m-icons {
+      margin-top: 1rem;
+    }
+  }
+ /* main .footer{
+  margin-top: 3% ;
+  width: 100%;
+  min-height: 10vh;
+  background: linear-gradient(45deg, rgba(207, 255, 255, 0.75), rgba(207, 255, 255, 0.75));
+  /* background:linear-gradient(151deg, rgba(174, 156, 223, 1) 4%, rgba(15, 144, 223, 1) 52%, rgba(6, 176, 213, 1) 83%); }*/
+ 
+ /* main .footer .row{
+  padding: 2% 0 0 1%;
+ }
+ main .footer .row span{
+  font-family: var(--Josefin);
+  font-weight: bold;
+  font-size: 20px;
+  color: #8a8787;
+  /* margin: 0 .5rem; */
+  /* padding: 0 .3rem; }*/
+
+  .useful-container h3,
+  .contact-container h3,
+  .sumarry-container h3,
+  .footer-container1 p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+   
+
+  .ansu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ansu ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+  }
+
+  .ansu ul li {
+    position: relative;
+    list-style: none;
+  }
+
+  .ansu ul li a {
+    position: relative;
+    font-size: 1.5rem;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: transparent;
+    line-height: 1em;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+  }
+
+  .ansu ul li a::before {
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    transition: 1s;
+    overflow: hidden;
+    border-right: 8px solid var(--clr);
+    -webkit-text-stroke: 1px  var(--clr);
+  }
+
+  .ansu ul li a:hover::before {
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(clr))
+  }
+ 
+   /* ...........X......... footer section ............X.......... */
+
+   @media only screen and (min-width: 320px) and (max-width:376px){
+          /* ..... Home Section ....... */
+    main #Home{ 
+      min-height: 32vh !important ;
+    }
+  
+    main #Home h2{
+      margin-right: 40px !important;
+      margin-top: 40px !important;
+      padding-top: 22px !important;
+      font-weight: 800;
+      font-style: italic;
+      padding-right: 20% !important;
+      padding-left: 3%;
+      margin-bottom: 2px !important;
+      font-size: 2.8vmax !important;
+      color: #2a2a2a;
+      line-height: 24px !important;
+      background: #FA9D4D;
+      background: -webkit-linear-gradient(to right, #fff 0%, #fff 100%);
+      background: -moz-linear-gradient(to right, #fff 0%, #fff 100%);
+      background: linear-gradient(to right, #fff 0%, #fff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    main #Home p{
+      padding-left: 3%;
+      color: #ffff;
+      font-size: 6px !important;
+    }
+    main #Home button{
+      border: none;
+      padding: 5px 6px !important;
+      margin-left: 20% !important;
+      border-radius: 20px;
+      background: #0f015c;
+      color: white;
+      font-family: var(--Lexend);
+      font-size: 8px;
+      font-weight: bold;
+      transition: .4s;
+    }
+    .header2{
+      font-family: var(--Anton);
+      font-weight: 100px;
+      text-align: center;
+      font-size: 18px !important;
+    }
+  } 
+
+  @media only screen and (min-width: 540px) and (max-width:570){
+    main #Home h2{
+     margin-right: 10px !important;
+     padding-right: 10% !important;
+     padding-left: 3%;
+     margin-bottom: 6px;
+     font-size: 20px ;
+     font-weight: 800;
+     font-style: italic;
+     color: #2a2a2a;
+     line-height: 25px ;
+   }
+   main #Home p{
+     padding-left: 3% ;
+     color: #ffff;
+     font-size: 8px 33 ;
+     margin-bottom: .5rem;
+   } 
+ }
+
+  @media only screen and (min-width: 640px) and (max-width: 670px){
+    main #Home h2{
+      /* margin-right: 40px !important; */
+      font-weight: 800;
+      font-style: italic;
+      padding-right: 30% !important;
+      padding-left: 3%;
+      margin-bottom: 20px !important;
+      font-size: 5vmax !important;
+      color: #2a2a2a;
+      line-height: 40px !important;
+      background: #FA9D4D;
+      background: -webkit-linear-gradient(to right, #fff 0%, #fff 100%);
+      background: -moz-linear-gradient(to right, #fff 0%, #fff 100%);
+      background: linear-gradient(to right, #fff 0%, #fff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    main #Home p{
+      padding-left: 3%;
+      color: #ffff;
+      font-size: 13px !important;
+      margin-bottom: 10px ;
+    }
+    main #Home button{
+      border: none;
+      padding: 8px 10px !important;
+      margin-left: 20% !important;
+      border-radius: 20px;
+      background: #0f015c;
+      color: white;
+      font-family: var(--Lexend);
+      font-size: 12px;
+      font-weight: bold;
+      transition: .4s;
+    } 
+  }
+
+  @media only screen and (min-width:720px) and (max-width: 768px){
+    main #Home h2{
+      /* margin-right: 40px !important; */
+      font-weight: 800;
+      font-style: italic;
+      padding-top: 9% !important;
+      padding-right: 30% !important;
+      padding-left: 3%;
+      margin-bottom: 20px !important;
+      font-size: 5vmax !important;
+      color: #2a2a2a;
+      line-height: 45px !important;
+      background: #FA9D4D;
+      background: -webkit-linear-gradient(to right, #fff 0%, #fff 100%);
+      background: -moz-linear-gradient(to right, #fff 0%, #fff 100%);
+      background: linear-gradient(to right, #fff 0%, #fff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    main #Home p{
+      padding-left: 3%;
+      color: #ffff;
+      font-size: 13px !important;
+      margin-bottom: 10px ;
+    }
+    main #Home button{
+      border: none;
+      padding: 8px 10px !important;
+      margin-left: 20% !important;
+      border-radius: 20px;
+      background: #0f015c;
+      color: white;
+      font-family: var(--Lexend);
+      font-size: 12px;
+      font-weight: bold;
+      transition: .4s;
+    } 
+  }
+
+
+
+/* ..........x..... Main Section.........x.... */
+
+/* linear-gradient(to right,#3296cf,#5795ec) */
+
+/* .................. Media Query ................. */
+@media (min-width: 700px) and (max-width: 900px){
+  .container{
+    max-width: 720px !important;
+  }
+}
+@media (min-width: 570px) and (max-width: 699px){
+  .container{
+    max-width: 620px !important;
+  }
+  element.style .owl-item{
+    width: 302px !important;
+  }
+}
+@media (max-width: 559px) and (max-width: 569px){
+  .container{
+    max-width: 420px !important;
+  }
+  element.style .owl-item{
+    width: 100px !important;
+  }
+}
+
+@media only screen and (max-width: 1366px){
+  main #testimonial .swiper-js{
+    position: relative;
+    width: 100%;
+    min-height: 75vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background:linear-gradient(151deg, rgba(174, 156, 223, 1) 4%, rgba(15, 144, 223, 1) 52%, rgba(6, 176, 213, 1) 83%);
+    opacity: 0.8;
+  }
+}
+@media only screen and (max-width: 1118px){
+       /* ........ Home Section ......... */
+  /* main #Home{ 
+    min-height: 96vh ;
+  } */
+  /* main #Home h2{
+    margin-right: 48px;
+    margin-top: 39px;
+    padding-top: 49px;
+    padding-right: 38%;
+    padding-left: 3%;
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-weight: 800;
+    font-style: italic;
+    color: #2a2a2a;
+    line-height: 60px;
+    background: #FA9D4D;
+    background: -webkit-linear-gradient(to right, #fff 0%, #fff 100%);
+    background: -moz-linear-gradient(to right, #fff 0%, #fff 100%);
+    background: linear-gradient(to right, #fff 0%, #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  main #Home p{
+    padding-left: 3%;
+    color: #ffff;
+    font-size: 18px;
+  }
+  main #Home button{
+    border: none;
+    padding: 10px 12px;
+    margin-left: 3%;
+    border-radius: 20px;
+    background: #0f015c;
+    color: white;
+    font-family: var(--Lexend);
+    font-size: 15px;
+    font-weight: bold;
+    transition: .4s;
+  } */
+      /* .......... About Section ............ */
+  main #about{
+    padding: 4% 6% 4%;
+   }
+  main #about .about-image img{
+    width: 40%;
+    height: auto;
+   }
+      /* ........... Courses Section ........ */
+  main .blog-content .blog-title h3{
+    font-size: 18px;
+  }
+  main .blog-content .blog-title .big-data{
+    font-size: 16px;
+  }
+      /* ............ Team Section ........... */
+  /* main #team{
+    margin: 3% 0 0;
+    width: 100%;
+    min-height: 63vh;
+    background-image: url(../IMAGES/service-left-bg.png);
+    background-repeat: no-repeat;
+   } */
+          
+}
+
+@media only screen and (max-width: 1075px){
+         /* ..... Home Section ..... */
+  /* main #Home{ 
+    min-height: 92vh;
+  } */
+        /* ..... Service Section ...... */
+  main #service .wrapper .single-testi .card{
+    text-align: center;
+    margin-top: 10%;
+    margin: 10% 0 5%;
+    padding: 1.5rem 4rem;
+    border-bottom-right-radius: 110px;
+    border-top-left-radius: 120px;
+    }
+ 
+}
+
+@media only screen and (max-width: 1000px){
+          /* ..... Home Section ..... */
+  /* main #Home{ 
+    min-height: 86vh ;
+  } */
+   main #Home h2{
+    margin-right: 48px;
+    margin-top: 36px;
+    padding-top: 46px;
+    padding-right: 38%;
+    padding-left: 3%;
+    margin-bottom: 28px;
+    font-size: 45px;
+    font-weight: 800;
+    font-style: italic;
+    color: #2a2a2a;
+    line-height: inherit;
+    background: #FA9D4D;
+    background: -webkit-linear-gradient(to right, #fff 0%, #fff 100%);
+    background: -moz-linear-gradient(to right, #fff 0%, #fff 100%);
+    background: linear-gradient(to right, #fff 0%, #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  main #Home p{
+    padding-left: 3%;
+    color: #ffff;
+    font-size: 15px;
+  }
+  main #Home button{
+    border: none;
+    padding: 10px 12px;
+    margin-left: 15%;
+    border-radius: 20px;
+    margin-top: 0;
+  } 
+        /* ..... About Section ..... */
+  main #about{
+    padding: 4% 4% 4%;
+  }
+  main #about .about-image img{
+    width: 50%;
+    height: auto;
+  }
+       /* ..... Team Section ..... */
+  .swiper {
+    width: 100%;
+    padding-top: 170px;
+    padding-bottom: 70px;
+  }
+  main #courses,
+  main #team{
+    margin-left: 3%;
+   }
+}
+
+@media only screen and (max-width: 930px){  
+            /* ..... Home Section ..... */
+  /* main #Home{ 
+    min-height: 79vh ;
+  } */
+  /* main #Home h2{
+              margin-right: 48px;
+              margin-top: 36px;
+              padding-top: 46px;
+              padding-right: 38%;
+              padding-left: 3%;
+              margin-bottom: 25px;
+              font-size: 40px;
+              font-weight: 800;
+              font-style: italic;
+              color: #2a2a2a;
+              line-height: 53px;
+              background: #FA9D4D;
+              background: -webkit-linear-gradient(to right, #fff 0%, #fff 100%);
+              background: -moz-linear-gradient(to right, #fff 0%, #fff 100%);
+              background: linear-gradient(to right, #fff 0%, #fff 100%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+  }
+  main #Home p{
+              padding-left: 3%;
+              color: #ffff;
+              font-size: 13px;
+  } 
+  main #Home button{
+              border: none;
+              padding: 10px 12px;
+              margin-left: 3%;
+              border-radius: 20px;
+              margin-top: 0;
+  } */
+
+         /* ..... About Section ..... */
+  main #about{
+    padding: 4% 8% 4%;
+  }
+  main #about .about-image img{
+    width: 60%;
+    height: auto;
+    padding-left: 3%;
+   }
+  
+}
+
+@media only screen and (max-width: 876px){
+             /* ..... Home Section ..... */
+
+          /* ..... About Section ..... */
+  main #about .about-image img{
+    display: none;
+  }
+  main #about{
+    padding: 4% 9% 4%;
+  }
+         /* ...... Courses Section ...... */
+
+ main #service{
+  width: 100%;
+  max-height: 100vh;
+  background-image: url(../IMAGES/service-left-bg.png);
+  background-repeat: no-repeat;
+  padding: 4% 3%;
+ } 
+}
+
+@media only screen and (min-width: 843px) and (max-width:851px){
+  main #Home h2{
+    margin-right: 40px;
+    margin-top: 32px;
+    padding-top: 42px;
+    padding-right: 35%;
+    padding-left: 3%;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 800;
+    font-style: italic;
+    color: #2a2a2a;
+    line-height: 50px;
+    background: #FA9D4D;
+    background: -webkit-linear-gradient(to right, #fff 0%, #fff 100%);
+    background: -moz-linear-gradient(to right, #fff 0%, #fff 100%);
+    background: linear-gradient(to right, #fff 0%, #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  } 
+}
+
+@media only screen and (max-width: 820px){
+   main #Home h2{
+    /* min-height: 68vh ; */
+    padding-right: 20% !important; 
+    margin-right: 20% !important;
+    margin-bottom: 10px !important;
+  } 
+  main #Home button{
+    border: none;
+    padding: 10px 12px;
+    margin-left: 23%;
+    border-radius: 20px;
+    margin-top: 0;
+  }  
+  main #testimonial .swiper-js{
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background:linear-gradient(151deg, rgba(174, 156, 223, 1) 4%, rgba(15, 144, 223, 1) 52%, rgba(6, 176, 213, 1) 83%);
+    opacity: 0.8;
+  }
+  main #Home p{
+    padding-left: 3%;
+    color: #ffff;
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 699px){
+  /* main #Home{ 
+    min-height: 60vh ;
+  }
+  main #Home h2{
+    margin-right: 48px;
+    margin-top: 32px;
+    padding-top: 42px;
+    padding-right: 38%;
+    padding-left: 3%;
+    margin-bottom: 15px;
+    font-size: 34px;
+    font-weight: 800;
+    font-style: italic;
+    color: #2a2a2a;
+    line-height: 45px;
+    background: #FA9D4D;
+    background: -webkit-linear-gradient(to right, #fff 0%, #fff 100%);
+    background: -moz-linear-gradient(to right, #fff 0%, #fff 100%);
+    background: linear-gradient(to right, #fff 0%, #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  main #Home button{
+    border: none;
+    padding: 8px 10px;
+    margin-left: 30%;
+    border-radius: 20px;
+    margin-top: 0;
+  } */
+  /* main #team{
+    margin: 3% 0 0;
+    width: 100%;
+    min-height: 48vh;
+    background-image: url(../IMAGES/service-left-bg.png);
+    background-repeat: no-repeat;
+   } */
+   .header3{
+    position: absolute;
+    top: 18%;
+    font-family: var(--Anton);
+    font-weight: 100px;
+    text-align: center;
+    color: #fff ;
+    opacity: 100;
+    font-size: 28px;
+ }
+ .header2{
+  font-family: var(--Anton);
+  font-weight: 100px;
+  text-align: center;
+  font-size: 25px;
+}
+}
+
+@media only screen and (max-width: 659px){
+  /* main #Home{ 
+    min-height: 56vh ;
+  } */
+  /* main #Home h2{
+    margin-right: 45px;
+    margin-top: 32px;
+    padding-top: 42px;
+    padding-right: 32%;
+    padding-left: 3%;
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: 800;
+    font-style: italic;
+    color: #2a2a2a;
+    line-height: 42px;
+    background: #FA9D4D;
+    background: -webkit-linear-gradient(to right, #fff 0%, #fff 100%);
+    background: -moz-linear-gradient(to right, #fff 0%, #fff 100%);
+    background: linear-gradient(to right, #fff 0%, #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  main #Home p{
+    padding-left: 3%;
+    color: #ffff;
+    font-size: 12px;
+  }
+  main #Home button{
+    border: none;
+    padding: 6px 8px;
+    margin-left: 30%;
+    border-radius: 20px;
+    margin-top: 0;
+    font-size: 11px;
+  }  */
+  main #about .about-text .about-para h3{
+    font-size: 1.1rem;
+    color: #3296cf ;
+    font-family: var(--Lexend);
+   }
+}
+
+@media only screen and (max-width: 622px){
+  /* main #Home{ 
+    min-height: 54vh ;
+  }
+  main #Home h2{
+    margin-right: 50px;
+    margin-top: 32px;
+    padding-top: 42px;
+    padding-right: 32%;
+    padding-left: 3%;
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-weight: 800;
+    font-style: italic;
+    color: #2a2a2a;
+    line-height: 38px;
+    background: #FA9D4D;
+    background: -webkit-linear-gradient(to right, #fff 0%, #fff 100%);
+    background: -moz-linear-gradient(to right, #fff 0%, #fff 100%);
+    background: linear-gradient(to right, #fff 0%, #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  main #Home p{
+    padding-left: 3%;
+    color: #ffff;
+    font-size: 12px;
+    margin-bottom: .5rem;
+  } */
+  /* main #courses{
+    background: url(../IMAGES/Abract01.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+    min-height: 96vh;
+    margin-top: 0;
+    padding-top: 0;
+    background-size: 65%;
+ } */
+ main #service .wrapper .single-testi .card{
+  text-align: center;
+  margin-top: 10%;
+  margin: 10% 0 5%;
+  padding: 1.5rem .5rem;
+  border-bottom-right-radius: 100px;
+  border-top-left-radius: 100px;
+  }
+}
+
+@media only screen and (max-width: 570px){
+  .gomindz-logo{
+    width: 40px;
+    height: 40px;
+  }
+
+
+      /* ...... Home Section ...... */
+   
+  main #Home h2{
+    margin-right: 30px;
+    margin-top: 30px;
+    padding-top: 40px;
+    padding-right: 30%;
+    padding-left: 3%;
+    margin-bottom: 6px;
+    font-size: 24px;
+    font-weight: 800;
+    font-style: italic;
+    color: #2a2a2a;
+    line-height: 34px;
+    background: #FA9D4D;
+    background: -webkit-linear-gradient(to right, #fff 0%, #fff 100%);
+    background: -moz-linear-gradient(to right, #fff 0%, #fff 100%);
+    background: linear-gradient(to right, #fff 0%, #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  main #Home p{
+    padding-left: 3%;
+    color: #ffff;
+    font-size: 10px;
+    margin-bottom: .5rem;
+  } 
+  /* ..... Service Section ..... */
+  main #service .wrapper .single-testi .card{
+    text-align: center;
+    margin-top: 10%;
+    margin: 10% 0 5%;
+    padding: 1.5rem .2;
+    border-bottom-right-radius: 80px;
+    border-top-left-radius: 80px;
+  }
+  .container{
+      max-width: 420px !important;
+   }
+  element.style .owl-item{
+      width: 100px !important;
+  }
+}
+
+@media only screen and (max-width: 434px){
+        /* ..... Home Saection ...... */
+  .header2{
+    font-family: var(--Anton);
+    font-weight: 100px;
+    text-align: center;
+    font-size: 20px;
+}
+  .gomindz-logo{
+    width: 35px;
+    height: 35px;
+  }
+  main #Home{ 
+    min-height: 32vh  ;
+  }
+  main #Home h2{
+    margin-right: 40px;
+    margin-top: 48px;
+    padding-top: 22px;
+    padding-right: 30%;
+    padding-left: 3%;
+    margin-bottom: 10px;
+    font-size: 22px ;
+    font-weight: 800;
+    font-style: italic;
+    color: #2a2a2a;
+    line-height: 27px ;
+    background: #FA9D4D;
+    background: -webkit-linear-gradient(to right, #fff 0%, #fff 100%);
+    background: -moz-linear-gradient(to right, #fff 0%, #fff 100%);
+    background: linear-gradient(to right, #fff 0%, #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  main #Home p{
+    padding-left: 3%;
+    color: #ffff;
+    font-size: 9px;
+    margin-bottom: .2rem;
+  }
+  main #Home button{
+    border: none;
+    padding: 5px 6px !important;
+    margin-left: 20% !important;
+    border-radius: 20px;
+    background: #0f015c;
+    color: white;
+    font-family: var(--Lexend);
+    font-size: 10px;
+    font-weight: bold;
+    transition: .4s;
+  }
+       /* ...... Courses Section ...... */
+  main #courses{
+        background: url(../IMAGES/Abract01.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        width: 100%;
+        min-height: 22vmax;
+        margin-top: 0;
+        margin-left: 3%;
+        margin-bottom: 22%;
+        padding-top: 0;
+        background-size: 65%;
+        
+     }
+}
+
+@media only screen and (max-width: 280px){
+  main #Home h2{
+    margin-right: 20px !important;
+    margin-top: 45px !important;
+    padding-top: 18px;
+    padding-right: 20% !important;
+    padding-left: 3%;
+    margin-bottom: 10px;
+    font-size: 15px ;
+    font-weight: 800;
+    font-style: italic;
+    color: #2a2a2a;
+    line-height: 20px ;
+    background: #FA9D4D;
+    background: -webkit-linear-gradient(to right, #fff 0%, #fff 100%);
+    background: -moz-linear-gradient(to right, #fff 0%, #fff 100%);
+    background: linear-gradient(to right, #fff 0%, #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  main #Home p{
+    padding-left: 3%;
+    color: #ffff;
+    font-size: 6px;
+    margin-bottom: .2rem;
+  }
+  main #Home button{
+    border: none;
+    padding: 6px 8px !important;
+    margin-left: 20% !important;
+    border-radius: 20px;
+    background: #0f015c;
+    color: white;
+    font-family: var(--Lexend);
+    font-size: 8px;
+    font-weight: bold;
+    transition: .4s;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
