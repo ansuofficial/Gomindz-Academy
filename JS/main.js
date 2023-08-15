@@ -1,3 +1,17 @@
+const toggleButton = document.getElementsByClassName("toggle-button")[0];
+      const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+
+      toggleButton.addEventListener("click", () => {
+        navbarLinks.classList.toggle("active");
+      });
+
+      const navLinks = document.querySelectorAll(".navbar-links ul li a");
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          navbarLinks.classList.remove("active");
+        });
+      });
+
 //  MOOTH SCRILLING EFFECT 
 
   // Add an event listener to all anchor links

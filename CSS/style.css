@@ -57,6 +57,106 @@ nav{
     font-weight: bold;
     font-family:var(--Josefin) ;
 }
+/* .nav-item{    
+  display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background:linear-gradient(151deg, rgba(174, 156, 223, 1) 4%, rgba(15, 144, 223, 1) 52%, rgba(6, 176, 213, 1) 83%);
+  } */
+
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.toggle-button {
+    color: inherit;
+}
+
+.navbar-links {
+  /* Remove justify-content: center; */
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  /* justify-content: center; (remove this line) */
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  /* Add this line */
+  margin-left: auto;
+}
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.toggle-button {
+    position: absolute;
+    right: 1rem;
+    display: none;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 990px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+.bi-list {
+  font-size: 34px;
+  position: relative;
+}
+.nav-link:hover{
+  transform: scale(.9);
+  cursor: pointer;
+  border-bottom: 2PX solid blueviolet;
+}
+
 .gomindz-logo{
   width: 60px;
   height: 60px;
@@ -68,6 +168,16 @@ nav{
     border-bottom: 2PX solid blueviolet;
     /* border-radius: 0px; */
 }
+
+
+.nav-link{
+    color: #fff !important;
+    font-size: 16px;
+    font-weight: bold;
+    font-family:var(--Josefin);
+    position: relative;
+}
+
 /* .......X........Navigation Section........X..... */
 
 /* ............... Main Section............. */
@@ -338,6 +448,7 @@ main #Home h2{
   box-shadow: 0 -5px  10px rgba(0, 0, 0, 0.2);
   /* background-image: url(../IMAGES/service-left-bg.png); */
   background-repeat: no-repeat;
+  background: linear-gradient(45deg, rgba(95, 1, 245, 0.2), rgba(216, 224, 236, 0.2));
   padding: 2% 3% 0;
  } 
 
